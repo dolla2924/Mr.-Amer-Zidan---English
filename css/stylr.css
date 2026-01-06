@@ -85,7 +85,7 @@ body {
 .img_profile img {
     width: 280px;
     height: 280px;
-    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    border-radius: 50%;
     border: 8px solid rgba(255, 255, 255, 0.1);
     object-fit: cover;
     box-shadow: 0 15px 30px rgba(0,0,0,0.4);
@@ -194,4 +194,5 @@ body {
 /* للشاشات المتوسطة (Tablets) */
 @media (min-width: 769px) and (max-width: 1024px) {
     .Cours { grid-template-columns: repeat(2, 1fr); }
+
 }
