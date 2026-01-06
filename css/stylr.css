@@ -86,7 +86,7 @@ body {
     width: 280px;
     height: 280px;
     border-radius: 50%;
-    border: 8px solid rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.1);
     object-fit: cover;
     box-shadow: 0 15px 30px rgba(0,0,0,0.4);
     transition: 0.5s ease-in-out;
@@ -196,3 +196,4 @@ body {
     .Cours { grid-template-columns: repeat(2, 1fr); }
 
 }
+
