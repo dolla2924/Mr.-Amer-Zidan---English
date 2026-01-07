@@ -32,6 +32,9 @@ body {
     background-color: #333;
 }
 /* Lectures */
+.Lessons{
+    display: none;
+}
 .lec{
     display: flex;
     justify-content: space-between;
