@@ -13,4 +13,3 @@ btn_homework_ID.addEventListener('click',function(){
     Lessons_ID.style.display='none';
     homework_ID.style.display='block';
 })
-
