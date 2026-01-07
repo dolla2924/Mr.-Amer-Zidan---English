@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Header */
+.header {
+    background-color: #0f2027;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.nav_bar a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav_bar a:hover { color: #00f2fe; }
+
+.logo img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 2px solid #00f2fe;
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(135deg, #0f2027, #2c5364);
+    margin: 30px auto;
+    padding: 60px 5%;
+    width: 90%;
+    border-radius: 30px;
+    color: white;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.name h1 { font-size: 2.8rem; color: #00f2fe; margin-bottom: 5px; }
+.name h2 { font-size: 1.5rem; color: #088178; margin-bottom: 25px; opacity: 0.9; }
+.phone-item h2{
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+.phone-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+    direction: ltr;
+}
+
+.phone-item i { color: #00f2fe;  }
+
+.map { margin-top: 20px; display: flex; align-items: center; gap: 10px; }
+.map i { color: #ff4b2b; font-size: 1.8rem; }
+.map p{
+    color: black;
+}
+
+.img_profile img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.1);
+    object-fit: cover;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+    transition: 0.5s ease-in-out;
+}
+
+.img_profile img:hover { border-radius: 50%; transform: scale(1.02); }
+
+/* Titles */
+.titel {
+    display: flex;
+    align-items: center;
+    padding: 40px 8% 20px;
+    gap: 15px;
+}
+
+.titel h1 { color: #088178; font-size: 2rem; border-bottom: 3px solid #ff4b2b; }
+.titel i { color: #ff4b2b; font-size: 2rem; }
+
+/* Courses Grid */
+.Cours {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 0 8% 40px;
+}
+
+.Cours .card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: 0.3s;
+    text-align: center;
+    border: 1px solid #eee;
+}
+
+.Cours .card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.15); }
+
+.Cours .card img {
+    width: 100%;
+    height: 220px;
+}
+
+.card_info { padding: 20px; display: flex; justify-content: center; align-items: center; gap: 15px; }
+
+.Cours .card a {
+    color: #088178;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.Cours .card i { color: #555; cursor: pointer; }
+
+/* Contact Cards */
+.cards_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 8% 60px;
+}
+
+.card_content {
+    flex: 1;
+    min-width: 280px;
+    max-width: 400px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.card_content:hover { transform: scale(1.03); }
+.card_content i { font-size: 3.5rem; color: #088178; margin-bottom: 15px; }
+.card_content hr { width: 50px; margin: 15px auto; border: 2px solid #ff4b2b; }
+.card_content a { color: #333; text-decoration: none; font-weight: 600; }
+
+/* ========================================= */
+/* Responsive Design (Media Queries) */
+/* ========================================= */
+
+/* للهواتف الصغيرة */
+@media (max-width: 768px) {
+    .header { padding: 15px; gap: 15px; }
+    .nav_bar a { margin: 0 10px; font-size: 0.9rem; }
+    
+    .profile {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .name h1 { font-size: 2rem; }
+    .img_profile img { width: 200px; height: 200px; }
+
+    .phone-item { justify-content: center; }
+    .map { justify-content: center; }
+    
+    .titel { justify-content: center; padding: 30px 0; }
+}
+
+/* للشاشات المتوسطة (Tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .Cours { grid-template-columns: repeat(2, 1fr); }
+}
