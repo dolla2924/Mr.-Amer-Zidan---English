@@ -4,7 +4,7 @@ const Lessons_ID =document.getElementById("Lessons");
 const homework_ID =document.getElementById("homework");
 
 
-
+homework_ID.style.display='none';
 btn_Lessons_ID.addEventListener('click',function(){
     Lessons_ID.style.display='block';
     homework_ID.style.display='none';
@@ -13,3 +13,4 @@ btn_homework_ID.addEventListener('click',function(){
     Lessons_ID.style.display='none';
     homework_ID.style.display='block';
 })
+
