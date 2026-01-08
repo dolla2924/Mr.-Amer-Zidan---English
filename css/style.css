@@ -40,7 +40,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: 5px;
 }
 .logo img {
     width: 55px;
@@ -189,7 +189,7 @@ body {
 /* للهواتف الصغيرة */
 @media (max-width: 768px) {
     .header { padding: 15px; gap: 15px; }
-    .nav_bar a { margin: 0 10px; font-size: 0.9rem; }
+    .nav_bar a { margin: 0 5px; font-size: 0.9rem; }
     
     .profile {
         flex-direction: column-reverse;
@@ -211,3 +211,4 @@ body {
     .Cours { grid-template-columns: repeat(2, 1fr); }
 
 }
+
