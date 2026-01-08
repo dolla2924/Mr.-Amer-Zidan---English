@@ -36,11 +36,27 @@ body {
 
 .nav_bar a:hover { color: #00f2fe; }
 
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
 .logo img {
     width: 55px;
     height: 55px;
     border-radius: 50%;
     border: 2px solid #00f2fe;
+}
+.icon i{
+    font-size:15px;
+    color: #fff;
+    background-color: #088178;
+    padding: 8px 10px;
+    border-radius: 50%;
+}
+.icon i:hover{
+    color: #ff4b2b;
 }
 
 /* Profile Section */
